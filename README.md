@@ -8,7 +8,10 @@ There are no extra installation requirements aside from a browser such as Chrome
 
 ## Usage
 
-Simply click on the link above.
+Click the Start button to start the countdown and move the competitors up to the starting line.
+On 'Go!', click the 'q' key to advance the chicken and the 'z' key to advance the egg.
+The first character to cross the finish line wins the race.
+Hit the Reset button to queue them up back before the start line to start a new race.
 
 ## Contributing
 
