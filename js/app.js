@@ -66,6 +66,7 @@ $(document).ready(function() {
         // testing
         // console.log(`chicken has moved ${numMovesChicken} spaces, egg has moved ${numMovesEgg} spaces`);
 
+        // check for winner!
         // if either the chicken or the egg has crossed the finish line
         // display the winner and set/reset variables indicating that the game is over
         if (Math.max(numMovesChicken, numMovesEgg) === numMovesToFinish) {
@@ -111,7 +112,7 @@ $(document).ready(function() {
       countDown = 1;
       gameTriggered = true;
       // display the first countdown text - On Your Mark
-      $("h2.winner").css("color","rgba(26,127,0,1)");
+      $("h2.winner").css("color","grey");
       $("h2.winner").text("On Your Mark");
       // move the chicken and egg pixels
       $(".chicken").animate({left: "+=50"}, 200);
@@ -127,6 +128,7 @@ $(document).ready(function() {
     // display the third and final countdown text - Go!
     // flip the boolean game started variable to true
     } else if (countDown === 2) {
+      $("h2.winner").css("color","rgba(26,127,0,1)");
       $("h2.winner").text("Go!");
       gameStarted = true;
     }
