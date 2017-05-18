@@ -1,6 +1,6 @@
 # Racing Game
 
-This is a simple but fun game that pits a chicken against an egg in a friendly foot race (although the egg doesn't have any feet).
+This is a simple but fun game that pits a chicken against an egg in a friendly foot race (even though the egg doesn't have any feet).
 
 ## Installation
 
@@ -12,6 +12,13 @@ Click the Start button to start the countdown and move the competitors up to the
 On 'Go!', click the 'q' key to advance the chicken and the 'z' key to advance the egg.
 The first character to cross the finish line wins the race.
 Hit the Reset button to queue them up back before the start line to start a new race.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* JQuery
 
 ## Contributing
 
