@@ -51,12 +51,14 @@ $(document).ready(function() {
 
         // move the chicken if the 'c' key was pressed, and move the egg if the 'e' key was pressed
         // animate the move using 0.2 seconds
-        if (keyPressed === 113) {
-          $(".chicken").animate({left: "+=" + moveRightPixels}, 200);
-          numMovesChicken++
-        } else if (keyPressed === 122) {
-          $(".egg").animate({left: "+=" + moveRightPixels}, 200);
-          numMovesEgg++
+        if (Math.max(numMovesChicken, numMovesEgg) < numMovesToFinish) {
+          if (keyPressed === 113) {
+            $(".chicken").animate({left: "+=" + moveRightPixels}, 200);
+            numMovesChicken++
+          } else if (keyPressed === 122) {
+            $(".egg").animate({left: "+=" + moveRightPixels}, 200);
+            numMovesEgg++
+          }
         }
 
         // get the current position of the chicken and egg (left side)
@@ -69,7 +71,7 @@ $(document).ready(function() {
         // check for winner!
         // if either the chicken or the egg has crossed the finish line
         // display the winner and set/reset variables indicating that the game is over
-        if (Math.max(numMovesChicken, numMovesEgg) === numMovesToFinish) {
+        if (Math.max(posChicken, posEgg) >= finishLine) {
           if (numMovesChicken === numMovesToFinish) {
             $("h2.winner").text("Chicken wins!");
           } else {
