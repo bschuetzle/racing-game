@@ -38,10 +38,10 @@ $(document).ready(function() {
     if (!gameOver) {
 
       // ignore the keypresses if the game hasn't started yet (need to wait for 'Go!')
-      if (!gameStarted && (keyPressed === 99 || keyPressed === 101)) {
+      if (!gameStarted && (keyPressed === 113 || keyPressed === 122)) {
 
         // if the game hasn't been triggered yet, alert the user they need to hit the start button first
-        if (!gameTriggered && (keyPressed === 99 || keyPressed === 101)) {
+        if (!gameTriggered && (keyPressed === 113 || keyPressed === 122)) {
           $("h2.winner").css("color","grey");
           $("h2.winner").text("Hit the start button to start the race!");
         }
@@ -51,10 +51,10 @@ $(document).ready(function() {
 
         // move the chicken if the 'c' key was pressed, and move the egg if the 'e' key was pressed
         // animate the move using 0.2 seconds
-        if (keyPressed === 99) {
+        if (keyPressed === 113) {
           $(".chicken").animate({left: "+=" + moveRightPixels}, 200);
           numMovesChicken++
-        } else if (keyPressed === 101) {
+        } else if (keyPressed === 122) {
           $(".egg").animate({left: "+=" + moveRightPixels}, 200);
           numMovesEgg++
         }
