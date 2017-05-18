@@ -1,0 +1,88 @@
+
+body {
+  background: url("../assets/imgs/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1.first-title {
+  font-family: "Permanent Marker";
+  font-weight: 900;
+  font-size: 60px;
+}
+
+h1.second-title {
+  font-family: "Baloo";
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.buttons-outer {
+  margin: 20px 0;
+}
+
+.buttons-inner {
+  text-align: center;
+}
+
+.button {
+  height: 50px;
+  width: 100px;
+  color: rgb(25,25,25);
+  font-size: 16px;
+  background: rgba(0,0,0,0);
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.button.start:hover {
+  background: rgba(105,255,76,0.2);
+}
+
+.button.reset:hover {
+  background: rgba(255,226,76,0.2);
+}
+
+.button:focus {
+  outline: 0;
+}
+
+p.instructions {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-family: "helvetica", sans-serif;
+  font-size: 16px;
+}
+
+.competitor {
+  display: block;
+}
+
+.chicken {
+  position: relative;
+  top: 90px;
+}
+
+.egg {
+  position: relative;
+  top: 0px;
+}
+
+.buttons {
+  margin: 0 auto;
+}
+
+.winner {
+  text-align: center;
+  font-family: "Baloo";
+  font-size: 30px;
+  color: rgba(26,127,0,0);
+}
